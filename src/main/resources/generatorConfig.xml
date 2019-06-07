@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:postgresql://localhost:5432/springboot" driverClass="org.postgresql.Driver" password="jeeva" userId="postgres" />
+    <javaModelGenerator targetPackage="com.example.springbootMYBATIS.model" targetProject="springbootMYBATIS" />
+    <sqlMapGenerator targetPackage="com.example.springbootMYBATIS.repository" targetProject="springbootMYBATIS" />
+    <javaClientGenerator targetPackage="com.example.springbootMYBATIS.mapper" targetProject="springbootMYBATIS" type="XMLMAPPER" />
+    <table tableName="employees"/>
+  </context>
+</generatorConfiguration>
